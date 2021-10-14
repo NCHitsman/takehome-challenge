@@ -15,7 +15,8 @@ function App(db) {
 
   return (
     <div className="ParentAppDiv">
-      <img className="img" src={image} alt="Img"></img>
+      <img className="Img" src={image} alt="Img"></img>
+      <div className="WelcomeText">Welcome!</div>
     </div>
   );
 }
