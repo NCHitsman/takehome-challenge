@@ -43,6 +43,8 @@
 
 .FormInput {
   box-sizing: border-box;
+  max-width: 100%;
+  min-width: 100%;
   border: 1px solid gray;
   border-radius: 4px;
   margin-top: 10px;
@@ -82,3 +84,4 @@
   max-width: 100%;
   min-width: 100%;
 }
+

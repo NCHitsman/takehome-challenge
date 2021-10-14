@@ -22,13 +22,28 @@ const MiddleNameTextAndInput = ({ middleName, setMiddleName }) => {
     <div className='MiddleNameContainer'>
       <div className='InputLabelText'>Middle Name</div>
       <input
-        className='MiddleNameInput FormInput'
+        className='FormInput'
         type='text'
         value={middleName}
         onChange={(e) => setMiddleName(e.target.value)}
         placeholder='Middle'
       />
     </div>
+  )
+}
+
+const LastNameTextAndInput = ({ lastName, setLastName }) => {
+  return (
+    <>
+      <div className='InputLabelText'>Last Name</div>
+      <input
+        className='FormInput'
+        type='text'
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
+        placeholder='Last Name*'
+      />
+    </>
   )
 }
 
@@ -59,6 +74,7 @@ const App = (db) => {
           <FirstNameTextAndInput firstName={firstName} setFirstName={setFirstName} />
           <MiddleNameTextAndInput middleName={middleName} setMiddleName={setMiddleName} />
         </div>
+        <LastNameTextAndInput lastName={lastName} setLastName={setLastName} />
       </form>
     </div>
   );
