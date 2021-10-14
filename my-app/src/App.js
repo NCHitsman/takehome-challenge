@@ -104,7 +104,7 @@ const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErr
   )
 }
 
-const App = (db) => {
+const App = ({ db }) => {
   const [nameErrors, setNameErrors] = useState([]);
   const [dateErrors, setDateErrors] = useState([]);
   const [firstName, setFirstName] = useState("");
@@ -149,6 +149,7 @@ const App = (db) => {
       if (middleName) db.putItem('Middle Name', middleName);
       db.putItem('Last Name', lastName);
       db.putItem("Date of Birth", `${month}/${day}/${year}`);
+      setSucessful(true)
     }
   }
 
@@ -180,6 +181,9 @@ const App = (db) => {
           dateErrors={dateErrors}
         />
         <div className='ButtonContainer'>
+          <div className="SucessContainer">
+            {sucessful && "Data sucessfully collected!"}
+          </div>
           <button type='submit' className='AcceptButton'>
             <div className='ButtonTextDiv'>
               <div>I Accept</div>
