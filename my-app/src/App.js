@@ -145,7 +145,10 @@ const App = (db) => {
       setDateErrors([])
     }
     if (!currentDateErrors.length && !currentNameErrors.length) {
-      
+      db.putItem('First Name', firstName);
+      if (middleName) db.putItem('Middle Name', middleName);
+      db.putItem('Last Name', lastName);
+      db.putItem("Date of Birth", `${month}/${day}/${year}`);
     }
   }
 
