@@ -63,12 +63,21 @@ const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErr
       <div className='ParentDateDiv'>
         <div className='DateInputContainer'>
           <div className='InputLabelText'>Month</div>
+          <select className='DateSelect' value={month} onChange={(e) => setMonth(e.target.value)}>
+            <option selected disabled hidden>Month</option>
+          </select>
         </div>
         <div className='DateInputContainer'>
           <div className='InputLabelText'>Day</div>
+          <select className='DateSelect' value={day} onChange={(e) => setDay(e.target.value)}>
+            <option selected disabled hidden>Day</option>
+          </select>
         </div>
         <div className='DateInputContainer'>
           <div className='InputLabelText'>Year</div>
+          <select className='DateSelect' value={year} onChange={(e) => setYear(e.target.value)}>
+            <option selected disabled hidden>Year</option>
+          </select>
         </div>
       </div>
     </>
