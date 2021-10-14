@@ -60,6 +60,17 @@ const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErr
   return (
     <>
       <div className="FormTitleText">Date of Birth*</div>
+      <div className='ParentDateDiv'>
+        <div className='DateInputContainer'>
+          <div className='InputLabelText'>Month</div>
+        </div>
+        <div className='DateInputContainer'>
+          <div className='InputLabelText'>Day</div>
+        </div>
+        <div className='DateInputContainer'>
+          <div className='InputLabelText'>Year</div>
+        </div>
+      </div>
     </>
   )
 }

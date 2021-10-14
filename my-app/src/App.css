@@ -88,3 +88,13 @@
 .LastNameInput{
   margin-bottom: 20px;
 }
+
+.ParentDateDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DateInputContainer{
+  width: 33%;
+}
