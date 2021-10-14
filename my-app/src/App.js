@@ -115,8 +115,7 @@ const App = ({ db }) => {
   const [year, setYear] = useState("Year");
   const [sucessful, setSucessful] = useState(false);
 
-  const submitHandler = (event) => {
-    event.preventDefault()
+  const namesChecker = () => {
     const currentNameErrors = [];
     if (!firstName.length || !lastName.length) {
       if (!firstName.length) {
@@ -126,9 +125,14 @@ const App = ({ db }) => {
         currentNameErrors.push('- Please add a last name.')
       }
       setNameErrors(currentNameErrors)
+      return false
     } else {
       setNameErrors([])
+      return true
     }
+  }
+
+  const datesChecker = () => {
     const currentDateErrors = []
     if (!+month || !+day || !+year) {
       if (!+month) {
@@ -141,12 +145,22 @@ const App = ({ db }) => {
         currentDateErrors.push('- Please select Year.')
       }
       setDateErrors(currentDateErrors)
+      return false
     } else {
       setDateErrors([])
+      return true
     }
-    if (!currentDateErrors.length && !currentNameErrors.length) {
+  }
+
+  const submitHandler = (event) => {
+    event.preventDefault()
+
+    let datesResult = datesChecker()
+    let namesResult = namesChecker()
+
+    if (datesResult && namesResult) {
       db.putItem('First Name', firstName);
-      if (middleName) db.putItem('Middle Name', middleName);
+      db.putItem('Middle Name', middleName ? middleName : null);
       db.putItem('Last Name', lastName);
       db.putItem("Date of Birth", `${month}/${day}/${year}`);
       setSucessful(true)
