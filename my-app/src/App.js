@@ -2,7 +2,22 @@ import image from "./images/undraw_welcoming_xvuq.svg";
 import { useState } from 'react';
 import './App.css';
 
-function App(db) {
+const FirstNameTextAndInput = ({firstName, setFirstName}) => {
+  return (
+    <div className='FirstNameContainer'>
+      <div className='InputLabelText'>First Name*</div>
+      <input
+        className='FirstNameInput'
+        type='text'
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+        placeholder='First Name'
+      />
+    </div>
+  )
+}
+
+const App = (db) => {
   const [nameErrors, setNameErrors] = useState([]);
   const [dateErrors, setDateErrors] = useState([]);
   const [firstName, setFirstName] = useState("");
@@ -25,6 +40,9 @@ function App(db) {
 
       <form className='FormParent' onSubmit={submitHandler}>
         <div className='FormFullLegalText'>Full Legal Name</div>
+        <div className='FirstMiddleContainer'>
+          <FirstNameTextAndInput firstName={firstName} setFirstName={setFirstName} />
+        </div>
       </form>
     </div>
   );
