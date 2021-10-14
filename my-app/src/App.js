@@ -112,6 +112,7 @@ const App = (db) => {
 
   const submitHandler = (event) => {
     event.preventDefault()
+    
   }
 
   return (
