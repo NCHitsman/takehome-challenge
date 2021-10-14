@@ -85,20 +85,25 @@
   min-width: 100%;
 }
 
-.LastNameInput{
+.LastNameInput {
   margin-bottom: 20px;
 }
 
-.ParentDateDiv{
+.ParentDateDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.DateInputContainer{
+.DateInputContainer {
   width: 33%;
 }
 
-.DateSelect{
-
+.DateSelect {
+  width: 95%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 3px;
 }
