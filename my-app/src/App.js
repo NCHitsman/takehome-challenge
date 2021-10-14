@@ -35,13 +35,13 @@ const MiddleNameTextAndInput = ({ middleName, setMiddleName }) => {
 const LastNameTextAndInput = ({ lastName, setLastName }) => {
   return (
     <>
-      <div className='InputLabelText'>Last Name</div>
+      <div className='InputLabelText'>Last Name*</div>
       <input
         className='LastNameInput FormInput'
         type='text'
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
-        placeholder='Last Name*'
+        placeholder='Last Name'
       />
     </>
   )

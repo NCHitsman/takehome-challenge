@@ -10,7 +10,7 @@
 .Img {
   max-width: 70%;
   min-width: 70%;
-  padding-top: 20px;
+  padding-top: 3vh;
 }
 
 .WelcomeText {
@@ -18,14 +18,14 @@
   font-size: 300%;
   font-weight: bold;
   width: 80%;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 7vh;
+  margin-bottom: 4vh;
 }
 
 .WelcomeSubText {
   width: 80%;
   font-size: 150%;
-  margin-bottom: 35px;
+  margin-bottom: 6vh;
 }
 
 .FormParent {
@@ -38,7 +38,7 @@
 .FormTitleText {
   font-weight: bold;
   font-size: 180%;
-  margin-bottom: 5px;
+  margin-bottom: 1vh;
 }
 
 .FormInput {
@@ -47,7 +47,7 @@
   min-width: 100%;
   border: 1px solid gray;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: 1.4vh;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 10px;
