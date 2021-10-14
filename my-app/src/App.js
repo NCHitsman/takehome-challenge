@@ -1,6 +1,4 @@
 import image from "./images/undraw_welcoming_xvuq.svg";
-import logo from "./images/logo-only.png";
-import logoText from "./images/logo-text-only-blurple.svg";
 import { useState } from 'react';
 import './App.css';
 
