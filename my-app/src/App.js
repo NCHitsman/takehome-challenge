@@ -112,7 +112,20 @@ const App = (db) => {
 
   const submitHandler = (event) => {
     event.preventDefault()
-    
+    const currentNameErrors = [];
+    if (!firstName.length || !lastName.length) {
+      if (!firstName.length) {
+        currentNameErrors.push('- Please add a first name.')
+      }
+      if (!lastName.length) {
+        currentNameErrors.push('- Please add a last name.')
+      }
+      setNameErrors(currentNameErrors)
+    } else {
+      setNameErrors([])
+    }
+
+    if (!)
   }
 
   return (
@@ -123,6 +136,11 @@ const App = (db) => {
 
       <form className='FormParent' onSubmit={submitHandler}>
         <div className='FormTitleText'>Full Legal Name</div>
+        {nameErrors && nameErrors.map((error, i) => {
+          return (
+            <div key={i}>{error}</div>
+          )
+        })}
         <div className='FirstMiddleContainer'>
           <FirstNameTextAndInput firstName={firstName} setFirstName={setFirstName} />
           <MiddleNameTextAndInput middleName={middleName} setMiddleName={setMiddleName} />
