@@ -4,9 +4,31 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+class DBMock {
+
+  async putItem(key, data) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        localStorage.setItem(key, data);
+        resolve('success')
+      }, 100)
+    })
+  }
+
+  async getItem(key) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const item = localStorage.getItem(key);
+        resolve(item);
+      })
+    })
+  }
+
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App db={new DBMock()} />
   </React.StrictMode>,
   document.getElementById('root')
 );
