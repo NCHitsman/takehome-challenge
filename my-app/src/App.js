@@ -60,6 +60,11 @@ const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErr
   return (
     <>
       <div className="FormTitleText">Date of Birth*</div>
+      {dateErrors && dateErrors.map((error, i) => {
+        return (
+          <div key={i}>{error}</div>
+        )
+      })}
       <div className='ParentDateDiv'>
         <div className='DateInputContainer'>
           <div className='InputLabelText'>Month</div>
@@ -124,8 +129,24 @@ const App = (db) => {
     } else {
       setNameErrors([])
     }
-
-    if (!)
+    const currentDateErrors = []
+    if (!+month || !+day || !+year) {
+      if (!+month) {
+        currentDateErrors.push('- Please select Month.')
+      }
+      if (!+day) {
+        currentDateErrors.push('- Please select Day.')
+      }
+      if (!+year) {
+        currentDateErrors.push('- Please select Year.')
+      }
+      setDateErrors(currentDateErrors)
+    } else {
+      setDateErrors([])
+    }
+    if (!currentDateErrors.length && !currentNameErrors.length) {
+      
+    }
   }
 
   return (
