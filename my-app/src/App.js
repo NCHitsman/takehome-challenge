@@ -1,4 +1,6 @@
 import image from "./images/undraw_welcoming_xvuq.svg";
+import logo from "./images/logo-only.png";
+import logoText from "./images/logo-text-only-blurple.svg";
 import { useState } from 'react';
 import './App.css';
 
@@ -195,6 +197,9 @@ const App = ({ db }) => {
 
   return (
     <div className="ParentAppDiv">
+      <div className='ParentLogoDiv'>
+        <img className="Logo" src='https://assets.website-files.com/60c388f99c5c910942ac67ed/613b9600834b2b70c257e18f_logo-text-and-icon-blurple.svg' alt='Logo'></img>
+      </div>
       <img className="Img" src={image} alt="Img"></img>
       <div className="WelcomeText">Welcome!</div>
       <div className='WelcomeSubText'>Let's start with some basic info</div>
