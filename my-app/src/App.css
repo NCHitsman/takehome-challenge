@@ -38,7 +38,7 @@
 .FormTitleText {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .FormInput {
@@ -58,6 +58,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .InputLabelText {
@@ -93,6 +94,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
 }
 
 .DateInputContainer {
@@ -142,4 +144,8 @@
 .SucessContainer {
   width: 45%;
   text-align: center;
+}
+
+.ErrorText{
+  color: red;
 }

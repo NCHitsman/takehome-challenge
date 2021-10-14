@@ -62,7 +62,7 @@ const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErr
       <div className="FormTitleText">Date of Birth*</div>
       {dateErrors && dateErrors.map((error, i) => {
         return (
-          <div key={i}>{error}</div>
+          <div className='ErrorText' key={i}>{error}</div>
         )
       })}
       <div className='ParentDateDiv'>
@@ -163,7 +163,7 @@ const App = ({ db }) => {
         <div className='FormTitleText'>Full Legal Name</div>
         {nameErrors && nameErrors.map((error, i) => {
           return (
-            <div key={i}>{error}</div>
+            <div className='ErrorText' key={i}>{error}</div>
           )
         })}
         <div className='FirstMiddleContainer'>
