@@ -47,6 +47,15 @@ const LastNameTextAndInput = ({ lastName, setLastName }) => {
   )
 }
 
+let months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let daysArray = [];
+let yearsArray = [];
+for (let i = 0; i < 31; i++) {
+  daysArray.push(i + 1);
+}
+for (let i = 2021; i >= 2021 - 99; i--) {
+  yearsArray.push(i);
+}
 const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErrors }) => {
   return (
     <>
