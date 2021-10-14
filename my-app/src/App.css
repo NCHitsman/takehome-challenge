@@ -88,6 +88,10 @@
 }
 
 .LastNameInput {
+  margin-bottom: 2vh;
+}
+
+.EmailInput {
   margin-bottom: 3.5vh;
 }
 

@@ -47,6 +47,21 @@ const LastNameTextAndInput = ({ lastName, setLastName }) => {
   )
 }
 
+const EmailTextAndInput = ({ email, setEmail }) => {
+  return (
+    <>
+      <div className='InputLabelText'>Email*</div>
+      <input
+        className='EmailInput FormInput'
+        type='email'
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder='Email'
+      />
+    </>
+  )
+}
+
 let months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let daysArray = [];
 let yearsArray = [];
@@ -110,6 +125,7 @@ const App = ({ db }) => {
   const [firstName, setFirstName] = useState("");
   const [middleName, setMiddleName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState('')
   const [day, setDay] = useState("Day");
   const [month, setMonth] = useState("Month");
   const [year, setYear] = useState("Year");
@@ -185,6 +201,7 @@ const App = ({ db }) => {
           <MiddleNameTextAndInput middleName={middleName} setMiddleName={setMiddleName} />
         </div>
         <LastNameTextAndInput lastName={lastName} setLastName={setLastName} />
+        <EmailTextAndInput email={email} setEmail={setEmail} />
         <DateOfBirthInput
           month={month}
           setMonth={setMonth}
