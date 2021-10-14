@@ -17,6 +17,7 @@ function App(db) {
     <div className="ParentAppDiv">
       <img className="Img" src={image} alt="Img"></img>
       <div className="WelcomeText">Welcome!</div>
+      <div className='WelcomeSubText'>Lest's start with some basic info</div>
     </div>
   );
 }
