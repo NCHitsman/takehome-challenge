@@ -136,6 +136,12 @@ const App = (db) => {
           setYear={setYear}
           dateErrors={dateErrors}
         />
+        <div className='ButtonContainer'>
+          <button type='submit' className='AcceptButton'>
+            <div>I Accept</div>
+            <div className="Arrow">→</div>
+          </button>
+        </div>
       </form>
     </div>
   );
