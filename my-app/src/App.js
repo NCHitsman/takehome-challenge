@@ -1,3 +1,4 @@
+import image from "./images/undraw_welcoming_xvuq.svg";
 import { useState } from 'react';
 import './App.css';
 
@@ -13,8 +14,8 @@ function App(db) {
   const [sucessful, setSucessful] = useState(false);
 
   return (
-    <div className="App">
-
+    <div className="ParentAppDiv">
+      <img className="img" src={image} alt="Img"></img>
     </div>
   );
 }
