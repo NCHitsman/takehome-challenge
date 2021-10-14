@@ -138,8 +138,10 @@ const App = (db) => {
         />
         <div className='ButtonContainer'>
           <button type='submit' className='AcceptButton'>
-            <div>I Accept</div>
-            <div className="Arrow">→</div>
+            <div className='ButtonTextDiv'>
+              <div>I Accept</div>
+              <div className="Arrow">→</div>
+            </div>
           </button>
         </div>
       </form>

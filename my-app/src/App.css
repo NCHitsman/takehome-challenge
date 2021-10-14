@@ -117,7 +117,24 @@
 }
 
 .AcceptButton {
+  background-color: darkblue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: unset;
+  border-radius: 5px;
+}
+
+.ButtonTextDiv{
+  display: flex;
+  align-items: center;
 }
 
 .Arrow {
+  font-size: 26px;
+  margin-left: 5px;
 }
