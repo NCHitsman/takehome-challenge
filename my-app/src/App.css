@@ -35,7 +35,7 @@
   flex-wrap: wrap;
 }
 
-.FormFullLegalText {
+.FormTitleText {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
@@ -85,3 +85,6 @@
   min-width: 100%;
 }
 
+.LastNameInput{
+  margin-bottom: 20px;
+}

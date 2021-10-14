@@ -37,12 +37,20 @@ const LastNameTextAndInput = ({ lastName, setLastName }) => {
     <>
       <div className='InputLabelText'>Last Name</div>
       <input
-        className='FormInput'
+        className='LastNameInput FormInput'
         type='text'
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
         placeholder='Last Name*'
       />
+    </>
+  )
+}
+
+const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErrors }) => {
+  return (
+    <>
+      <div className="FormTitleText">Date of Birth*</div>
     </>
   )
 }
@@ -69,12 +77,21 @@ const App = (db) => {
       <div className='WelcomeSubText'>Lest's start with some basic info</div>
 
       <form className='FormParent' onSubmit={submitHandler}>
-        <div className='FormFullLegalText'>Full Legal Name</div>
+        <div className='FormTitleText'>Full Legal Name</div>
         <div className='FirstMiddleContainer'>
           <FirstNameTextAndInput firstName={firstName} setFirstName={setFirstName} />
           <MiddleNameTextAndInput middleName={middleName} setMiddleName={setMiddleName} />
         </div>
         <LastNameTextAndInput lastName={lastName} setLastName={setLastName} />
+        <DateOfBirthInput
+          month={month}
+          setMonth={setMonth}
+          day={day}
+          setDay={setDay}
+          year={year}
+          setYear={setYear}
+          dateErrors={dateErrors}
+        />
       </form>
     </div>
   );
