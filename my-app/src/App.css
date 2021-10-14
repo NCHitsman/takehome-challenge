@@ -58,8 +58,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
-  margin-top: 5px;
+  margin-bottom: 2vh;
+  margin-top: 0.7vh;
 }
 
 .InputLabelText {
@@ -88,14 +88,14 @@
 }
 
 .LastNameInput {
-  margin-bottom: 20px;
+  margin-bottom: 3.5vh;
 }
 
 .ParentDateDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 0.7vh;
 }
 
 .DateInputContainer {
@@ -106,8 +106,8 @@
   width: 95%;
   border: 1px solid gray;
   border-radius: 4px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 1.4vh;
+  margin-bottom: 5vh;
   padding: 3px;
   font-size: 130%;
 }
@@ -117,7 +117,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 8vh;
 }
 
 .AcceptButton {
@@ -125,10 +125,10 @@
   color: white;
   font-size: 160%;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 3.4vh;
+  padding-right: 3.4vh;
+  padding-top: 1.7vh;
+  padding-bottom: 1.7vh;
   border: unset;
   border-radius: 5px;
 }
