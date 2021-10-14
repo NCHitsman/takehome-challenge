@@ -41,7 +41,26 @@
   margin-bottom: 10px;
 }
 
+.FormInput {
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+
 .FirstMiddleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.InputLabelText {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .FirstNameContainer {
@@ -50,18 +69,16 @@
 }
 
 .FirstNameInput {
-  box-sizing: border-box;
   max-width: 85%;
   min-width: 85%;
-  border: 1px solid gray;
-  border-radius: 4px;
-  margin-top: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 10px;
 }
 
-.InputLabelText {
-  font-size: 14px;
-  font-weight: 500;
+.MiddleNameContainer {
+  max-width: 40%;
+  min-width: 40%;
+}
+
+.MiddleNameInput {
+  max-width: 100%;
+  min-width: 100%;
 }

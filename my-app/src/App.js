@@ -2,16 +2,31 @@ import image from "./images/undraw_welcoming_xvuq.svg";
 import { useState } from 'react';
 import './App.css';
 
-const FirstNameTextAndInput = ({firstName, setFirstName}) => {
+const FirstNameTextAndInput = ({ firstName, setFirstName }) => {
   return (
     <div className='FirstNameContainer'>
       <div className='InputLabelText'>First Name*</div>
       <input
-        className='FirstNameInput'
+        className='FirstNameInput FormInput'
         type='text'
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
         placeholder='First Name'
+      />
+    </div>
+  )
+}
+
+const MiddleNameTextAndInput = ({ middleName, setMiddleName }) => {
+  return (
+    <div className='MiddleNameContainer'>
+      <div className='InputLabelText'>Middle Name</div>
+      <input
+        className='MiddleNameInput FormInput'
+        type='text'
+        value={middleName}
+        onChange={(e) => setMiddleName(e.target.value)}
+        placeholder='Middle'
       />
     </div>
   )
@@ -42,6 +57,7 @@ const App = (db) => {
         <div className='FormFullLegalText'>Full Legal Name</div>
         <div className='FirstMiddleContainer'>
           <FirstNameTextAndInput firstName={firstName} setFirstName={setFirstName} />
+          <MiddleNameTextAndInput middleName={middleName} setMiddleName={setMiddleName} />
         </div>
       </form>
     </div>
