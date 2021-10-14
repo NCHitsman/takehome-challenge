@@ -65,18 +65,33 @@ const DateOfBirthInput = ({ month, setMonth, day, setDay, year, setYear, dateErr
           <div className='InputLabelText'>Month</div>
           <select className='DateSelect' value={month} onChange={(e) => setMonth(e.target.value)}>
             <option selected disabled hidden>Month</option>
+            {months.map((monthNum, i) => {
+              return (
+                <option key={i} value={monthNum}>{monthNum}</option>
+              )
+            })}
           </select>
         </div>
         <div className='DateInputContainer'>
           <div className='InputLabelText'>Day</div>
           <select className='DateSelect' value={day} onChange={(e) => setDay(e.target.value)}>
             <option selected disabled hidden>Day</option>
+            {daysArray.map((dayNum, i) => {
+              return (
+                <option key={i} value={dayNum}>{dayNum}</option>
+              )
+            })}
           </select>
         </div>
         <div className='DateInputContainer'>
           <div className='InputLabelText'>Year</div>
           <select className='DateSelect' value={year} onChange={(e) => setYear(e.target.value)}>
             <option selected disabled hidden>Year</option>
+            {yearsArray.map((yearNum, i) => {
+              return (
+                <option key={i} value={yearNum}>{yearNum}</option>
+              )
+            })}
           </select>
         </div>
       </div>
