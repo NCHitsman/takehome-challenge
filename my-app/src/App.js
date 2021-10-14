@@ -171,7 +171,7 @@ const App = ({ db }) => {
     <div className="ParentAppDiv">
       <img className="Img" src={image} alt="Img"></img>
       <div className="WelcomeText">Welcome!</div>
-      <div className='WelcomeSubText'>Lest's start with some basic info</div>
+      <div className='WelcomeSubText'>Let's start with some basic info</div>
 
       <form className='FormParent' onSubmit={submitHandler}>
         <div className='FormTitleText'>Full Legal Name</div>

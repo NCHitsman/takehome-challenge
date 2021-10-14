@@ -15,7 +15,7 @@
 
 .WelcomeText {
   color: darkblue;
-  font-size: 22px;
+  font-size: 300%;
   font-weight: bold;
   width: 80%;
   margin-top: 40px;
@@ -24,7 +24,7 @@
 
 .WelcomeSubText {
   width: 80%;
-  font-size: 15px;
+  font-size: 150%;
   margin-bottom: 35px;
 }
 
@@ -37,7 +37,7 @@
 
 .FormTitleText {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 180%;
   margin-bottom: 5px;
 }
 
@@ -51,6 +51,7 @@
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 10px;
+  font-size: 130%;
 }
 
 .FirstMiddleContainer {
@@ -62,7 +63,7 @@
 }
 
 .InputLabelText {
-  font-size: 14px;
+  font-size: 140%;
   font-weight: 500;
 }
 
@@ -108,6 +109,7 @@
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 3px;
+  font-size: 130%;
 }
 
 .ButtonContainer {
@@ -121,7 +123,7 @@
 .AcceptButton {
   background-color: darkblue;
   color: white;
-  font-size: 16px;
+  font-size: 160%;
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px;
@@ -137,15 +139,17 @@
 }
 
 .Arrow {
-  font-size: 26px;
+  font-size: 165%;
   margin-left: 5px;
 }
 
 .SucessContainer {
   width: 45%;
   text-align: center;
+  font-size: 160%;
 }
 
-.ErrorText{
+.ErrorText {
   color: red;
+  font-size: 170%;
 }
